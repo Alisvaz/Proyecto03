@@ -1,0 +1,75 @@
+$whiteFont: #fff;
+$width: 100%;
+
+header {
+    width: $width;
+    background-color: black;
+    box-sizing: border-box;
+    padding: 30px;
+
+    article {
+        display: flex;
+        justify-content: space-around;
+
+        a {
+            width: 78px;
+            text-align: center;
+            font-size: 1rem;
+            color: $whiteFont;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 10px;
+            border-radius: 3px;
+            border: 3px solid $whiteFont;
+            font-weight: bold;
+            &:hover {
+                color: red;
+                background-color: white;
+                font-weight: bold;
+            }
+        }
+       
+    }
+}
+
+@mixin container($color, $borderColor) {
+    background-color: $color;
+    border: 3px solid $borderColor;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+@mixin font {
+    font-size: 2rem;
+    color:#fff;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    &:nth-last-child(1) {
+        @include container(green, black )
+    }
+    &:nth-last-child(2) {
+        @include container(rgb(128, 0, 17), black )
+    }
+    &:nth-last-child(3) {
+        @include container(rgb(17, 0, 128), black )
+        }
+
+        h1 {
+            @include font;
+            
+        }
+    }
+    
+}

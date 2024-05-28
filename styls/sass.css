@@ -1,0 +1,66 @@
+header {
+  width: 100%;
+  background-color: black;
+  box-sizing: border-box;
+  padding: 30px;
+}
+header article {
+  display: flex;
+  justify-content: space-around;
+}
+header article a {
+  width: 78px;
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 3px;
+  border: 3px solid #fff;
+  font-weight: bold;
+}
+header article a:hover {
+  color: red;
+  background-color: white;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+main article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main article:nth-last-child(1) {
+  background-color: green;
+  border: 3px solid black;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+main article:nth-last-child(2) {
+  background-color: rgb(128, 0, 17);
+  border: 3px solid black;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+main article:nth-last-child(3) {
+  background-color: rgb(17, 0, 128);
+  border: 3px solid black;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+main article h1 {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+}/*# sourceMappingURL=sass.css.map */
